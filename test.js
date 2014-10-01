@@ -3,7 +3,7 @@ var superagent = require("superagent"),
     expect = chai.expect,
     should = require("should");
 
-describe("Index", function () {
+describe.skip("Index", function () {
   it("renders HTML", function (done) {
     superagent.get("http://localhost:3000/")
       .end(function (e, res) {
